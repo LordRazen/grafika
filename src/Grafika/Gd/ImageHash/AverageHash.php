@@ -32,11 +32,11 @@ class AverageHash
      *
      * @return string
      */
-    public function hash($image, $editor)
+    public function hash($image, $editor, $width = 8, $height = 8)
     {
         // Resize the image.
-        $width = 8;
-        $height = 8;
+//        $width = 8;
+//        $height = 8;
 
         $image = clone $image; // Make sure we are working on the clone if Image is passed
         $editor->resizeExact($image, $width, $height); // Resize to exactly 8x8

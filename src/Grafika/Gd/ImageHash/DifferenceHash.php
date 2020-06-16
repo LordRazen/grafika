@@ -31,10 +31,10 @@ class DifferenceHash
      *
      * @return string
      */
-    public function hash($image, $editor)
+    public function hash($image, $editor, $width = 9, $height = 8)
     {
-        $width  = 9;
-        $height = 8;
+//        $width  = 9;
+//        $height = 8;
 
         $image = clone $image; // Make sure we are working on the clone if Image is passed
         $editor->resizeExact($image, $width, $height); // Resize to exactly 9x8
